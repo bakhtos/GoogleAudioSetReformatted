@@ -21,7 +21,7 @@ files to comply with GitHub's size limit.
 
 ## Changes in dataset
 
-All files are converted to **tab-separated `*.tsv`` files** (i.e. `csv` files with `\t`
+All files are converted to **tab-separated `*.tsv` files** (i.e. `csv` files with `\t`
 as a separator). 
 
 ### New fields and filenames
