@@ -75,3 +75,10 @@ to the `filename` with an underscore.** Since all files in the dataset are assum
 10 seconds long, this unifies the format of `filename` with the Strong version and
 makes `end_seconds` also redundant.
 
+### Class labels changes
+
+Class labels from both datasets are merged into one file and given in alphabetical
+order of `id`s. Since same `id`s are present in both datasets, but sometimes with
+different human-readable labels, labels from Strong dataset overwrite those from Weak.
+It is possible to regenerate `class_labels.tsv` while giving priority to the Weak
+version of labels by calling `convert_labels(False)` from [`src/convert.py`](src/convert.py).
