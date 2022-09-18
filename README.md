@@ -18,3 +18,41 @@ as ```python src/convert.py```, it does not require any external libraries.
 
 NOTE: `audioset_weak_train_unbalanced.tsv` has been manually split into two
 files to comply with GitHub's size limit. 
+
+## Changes in dataset
+
+All files are converted to **tab-separated `*.tsv`` files** (i.e. `csv` files with `\t`
+as a separator). 
+
+### New fields and filenames
+
+Fields are renamed according to the following table, to be compatible with [psds_eval](https://github.com/audioanalytic/psds_eval):
+
+|**Old field**|**New field**|
+|-------------|-------------|
+|`YTID`|`filename`|
+|`segment_id`|`filename`|
+|`start_seconds`|`onset`|
+|`start_time_seconds`|`onset`|
+|`end_seconds`|`offset`|
+|`end_time_seconds`|`offset`|
+|`positive_labels`|`event_label`|
+|`label`|`event_label`|
+|`present`|`present`|
+
+For class label files, `id` is now the name for the for `mid` label (e.g. `/m/09xor`)
+and `label` for the human-readable label (e.g. `Speech`). Index of label indicated
+for Weak dataset labels (`index` field in `class_labels_indices.csv`) is not used.
+
+Files are renamed according to the following table to ensure consisted naming:
+
+|**Old name**|**New name**|
+|------------|------------|
+|`balanced_train_segments.csv`|`audioset_weak_train_balanced.tsv`|
+|`unbalanced_train_segments.csv`|`audioset_weak_train_unbalanced.tsv` (split into two files)|
+|`eval_segments.csv`|`audioset_weak_eval.tsv`|
+|`audioset_train_strong.tsv`|`audioset_strong_train.tsv`|
+|`audioset_eval_strong.tsv`|`audioset_strong_eval.tsv`|
+|`ausioset_eval_strong_framed_posneg.tsv`|`audioset_strong_eval_posneg.tsv`|
+|`class_labels_indices.csv`|`class_labels.tsv` (merged with `mid_to_display_name.tsv`)|
+|`mid_to_display_name.tsv`|`class_labels.tsv` (merged with `class_labels_indices.csv`)|
