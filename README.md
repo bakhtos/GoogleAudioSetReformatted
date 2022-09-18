@@ -44,7 +44,8 @@ For class label files, `id` is now the name for the for `mid` label (e.g. `/m/09
 and `label` for the human-readable label (e.g. `Speech`). Index of label indicated
 for Weak dataset labels (`index` field in `class_labels_indices.csv`) is not used.
 
-Files are renamed according to the following table to ensure consisted naming:
+Files are renamed according to the following table to ensure consisted naming
+of the form `audioset_[weak|strong]_[train|eval]_[balanced|unbalanced|posneg]*.tsv`:
 
 |**Old name**|**New name**|
 |------------|------------|
