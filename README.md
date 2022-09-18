@@ -2,8 +2,8 @@
 
 During my work with [Google's AudioSet](https://research.google.com/audioset/index.html)
 I encountered some problems due to the
-fact that [Weak](https://research.google.com/audioset/download.html) and
-[Strong](https://research.google.com/audioset/download_strong.html) versions
+fact that [Weak](https://research.google.com/audioset/download.html)[1] and
+[Strong](https://research.google.com/audioset/download_strong.html)[2] versions
 of the dataset using different csv formatting for the data, and that also
 labels used in the two dataset [are different](https://github.com/audioset/ontology/issues/9)
 and also presented in files with different formatting.
@@ -92,3 +92,9 @@ Both the original dataset and this reworked version are licensed under [CC BY 4.
 **NOTE** Labels come from the [AudioSet ontology](https://research.google.com/audioset/ontology/index.html), which 
 is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/),
 but is not replicated in this repository.
+
+## References
+
+[1] Hershey, S., Ellis, D. P., Fonseca, E., Jansen, A., Liu, C., Moore, R. C., & Plakal, M. (2021, June). The benefit of temporally-strong labels in audio event classification. In ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 366-370). IEEE.
+
+[2] Gemmeke, J. F., Ellis, D. P., Freedman, D., Jansen, A., Lawrence, W., Moore, R. C., ... & Ritter, M. (2017, March). Audio set: An ontology and human-labeled dataset for audio events. In 2017 IEEE international conference on acoustics, speech and signal processing (ICASSP) (pp. 776-780). IEEE.
