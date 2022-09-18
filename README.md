@@ -59,18 +59,18 @@ Files are renamed according to the following table to ensure consisted naming:
 
 ### Strong dataset changes
 
-Only changes to the strong dataset are renaming of fields and reordering of columns,
+Only changes to the Strong dataset are renaming of fields and reordering of columns,
 so that both Weak and Strong version have `filename` and `event_label` as first 
 two columns.
 
 ### Weak dataset changes
 
-- Labels are given one per line
+- Labels are given one per line, instead of comma-separated and quoted list
 
 - To make sure that `filename` format is the same as in Strong verson, the following
 format change is made:
 
-**The value of the `start_seconds` fields is convert to milliseconds and appended
+**The value of the `start_seconds` field is converted to milliseconds and appended
 to the `filename` with an underscore.** Since all files in the dataset are assumed to be
 10 seconds long, this unifies the format of `filename` with the Strong version and
 makes `end_seconds` also redundant.
