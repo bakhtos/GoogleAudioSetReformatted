@@ -1,6 +1,6 @@
-# Google's Audioset: Reformatted
+# Google's AudioSet: Reformatted
 
-During my work with [Google's Audioset](https://research.google.com/audioset/index.html)
+During my work with [Google's AudioSet](https://research.google.com/audioset/index.html)
 I encountered some problems due to the
 fact that [Weak](https://research.google.com/audioset/download.html) and
 [Strong](https://research.google.com/audioset/download_strong.html) versions
