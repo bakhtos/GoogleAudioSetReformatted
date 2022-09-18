@@ -1,6 +1,6 @@
 # Google's Audioset: Reformatted
 
-During my work with Google's Audioset I encountered some problems due to the
+During my work with (Google's Audioset)[https://research.google.com/audioset/index.html] I encountered some problems due to the
 fact that [Weak](https://research.google.com/audioset/download.html) and
 [Strong](https://research.google.com/audioset/download_strong.html) versions
 of the dataset using different csv formatting for the data, and that also
@@ -22,7 +22,7 @@ files to comply with GitHub's size limit.
 ## Changes in dataset
 
 All files are converted to **tab-separated `*.tsv` files** (i.e. `csv` files with `\t`
-as a separator). 
+as a separator). All files have a header as the first line.
 
 ### New fields and filenames
 
@@ -83,3 +83,11 @@ order of `id`s. Since same `id`s are present in both datasets, but sometimes wit
 different human-readable labels, labels from Strong dataset overwrite those from Weak.
 It is possible to regenerate `class_labels.tsv` while giving priority to the Weak
 version of labels by calling `convert_labels(False)` from [`src/convert.py`](src/convert.py).
+
+## License
+
+Both the original dataset and this reworked version are licensed under (CC BY 4.0)[https://creativecommons.org/licenses/by/4.0/]
+
+**NOTE** Labels come from the (AudioSet ontology)[https://research.google.com/audioset/ontology/index.html], which 
+is licensed under (CC BY-SA 4.0)[https://creativecommons.org/licenses/by-sa/4.0/],
+but is not replicated in this repository.
