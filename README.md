@@ -4,8 +4,8 @@ During my work with [Google's AudioSet](https://research.google.com/audioset/ind
 I encountered some problems due to the
 fact that [Weak](https://research.google.com/audioset/download.html) [1] and
 [Strong](https://research.google.com/audioset/download_strong.html) [2] versions
-of the dataset using different csv formatting for the data, and that also
-labels used in the two dataset [are different](https://github.com/audioset/ontology/issues/9)
+of the dataset use different csv formatting for the data, and that also
+labels used in the two datasets [are different](https://github.com/audioset/ontology/issues/9)
 and also presented in files with different formatting.
 
 This repository aims to unify the formats of the datasets so that it is possible
@@ -55,7 +55,7 @@ of the form `audioset_[weak|strong]_[train|eval]_[balanced|unbalanced|posneg]*.t
 |`eval_segments.csv`|`audioset_weak_eval.tsv`|
 |`audioset_train_strong.tsv`|`audioset_strong_train.tsv`|
 |`audioset_eval_strong.tsv`|`audioset_strong_eval.tsv`|
-|`ausioset_eval_strong_framed_posneg.tsv`|`audioset_strong_eval_posneg.tsv`|
+|`audioset_eval_strong_framed_posneg.tsv`|`audioset_strong_eval_posneg.tsv`|
 |`class_labels_indices.csv`|`class_labels.tsv` (merged with `mid_to_display_name.tsv`)|
 |`mid_to_display_name.tsv`|`class_labels.tsv` (merged with `class_labels_indices.csv`)|
 
