@@ -1,5 +1,7 @@
 # Google's AudioSet: Reformatted
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7096702.svg)](https://doi.org/10.5281/zenodo.7096702)
+
 During my work with [Google's AudioSet](https://research.google.com/audioset/index.html)
 I encountered some problems due to the
 fact that [Weak](https://research.google.com/audioset/download.html) [1] and
@@ -92,6 +94,11 @@ Both the original dataset and this reworked version are licensed under [CC BY 4.
 **NOTE** Labels come from the [AudioSet ontology](https://research.google.com/audioset/ontology/index.html), which 
 is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/),
 but is not replicated in this repository.
+
+## Citing this version
+
+This dataset is also available on Zenodo (https://zenodo.org/record/7096702).
+Please cite that as `Bakhtin. (2022). Google's Audioset: Reformatted (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7096702`.
 
 ## References
 
