@@ -20,7 +20,7 @@ The [source folder](src) contains also the original dataset files and the script
 as ```python src/convert.py```, it does not require any external libraries.
 
 NOTE: `audioset_weak_train_unbalanced.tsv` has been manually split into two
-files to comply with GitHub's size limit. 
+files to comply with GitHub's size limit. The [Zenodo](https://zenodo.org/record/7096702) version has only one big file.
 
 ## Changes in dataset
 
